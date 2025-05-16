@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YODHA - Virtual Assistant</title>
+    <link rel=" icon" href="avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Password Popup -->
+    <div id="password-popup" class="popup">
+        <div class="popup-content">
+            <h2>Enter Password</h2>
+            <input type="password" id="passwordInput" placeholder="Enter your password">
+            <button id="submitPassword">Submit</button>
+            <p id="errorMessage" class="error"></p>
+        </div>
+    </div>
+    <div id="battery-status">
+        Battery: --
+    </div>
+
+
+    <section class="main">
+        <div class="image-container">
+            <div class="image">
+                <img src="giphy.gif" alt="image">
+            </div>
+            <h1>Y O D H A </h1>
+            <p>I'm a Virtual Assistant YODHA, How may i help you?</p>
+        </div>
+
+        <div class="input">
+            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+            <h1 class="content"> Click here to speak</h1>
+        </div>
+
+    </section>
+    <!-- Floating Chat Icon -->
+
+    <div class="chat-icon" id="chatIcon">
+        <i class="fas fa-comment-alt"></i>
+    </div>
+
+    <!-- Chat Popup -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <h3>Yodha Chat</h3>
+            <span id="closePopup">&times;</span>
+        </div>
+        <div class="chat-body" id="chatBox">
+            <p>Hello! Ask me anything...</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
