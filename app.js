@@ -647,7 +647,7 @@ function appendMessage(sender, text) {
 async function fetchGeminiReply(userMessage) {
     appendMessage('Yodha', 'Typing...');
 
-    const API_KEY = 'AIzaSyALcophheA5lC3XnCR_l56trfcHrqCdY38';  // <-- Replace with your Gemini API key
+    const API_KEY = '';  // <-- Replace with your Gemini API key
     const endpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
     const requestBody = {
